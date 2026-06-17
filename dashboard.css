@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#081b52;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px 20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.logo i{
+    font-size:30px;
+    color:#4f6fff;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:12px 0;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:white;
+    padding:14px 16px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    background:#2563eb;
+}
+
+.sidebar ul li a i{
+    width:20px;
+}
+
+/* Main Content */
+
+.main-content{
+    margin-left:260px;
+    width:100%;
+    padding:30px;
+}
+
+/* Header */
+
+.header{
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#64748b;
+    font-size:18px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.card-head h3{
+    color:#1e3a8a;
+    font-size:18px;
+}
+
+.card-head i{
+    font-size:24px;
+    color:#2563eb;
+}
+
+.card h2{
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.mini-progress{
+    height:8px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.mini-progress div{
+    height:100%;
+    background:#2563eb;
+    border-radius:20px;
+}
+
+/* Sections */
+
+.section{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:25px;
+}
+
+.section h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+/* Progress */
+
+.progress-item{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0 8px;
+    font-weight:600;
+}
+
+.progress-bar{
+    height:10px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar div{
+    height:100%;
+    background:#2563eb;
+    border-radius:20px;
+}
+
+/* Quick Actions */
+
+.action-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.action-buttons a{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 22px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.action-buttons a:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* Activity */
+
+.activity{
+    padding:15px;
+    border-bottom:1px solid #e5e7eb;
+    color:#334155;
+}
+
+.activity:last-child{
+    border-bottom:none;
+}
+
+/* Topics */
+
+.topics{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.topic-card{
+    background:#eff6ff;
+    color:#1e3a8a;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+    font-weight:600;
+    transition:.3s;
+}
+
+.topic-card:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+/* Tablet */
+
+@media(max-width:1200px){
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .topics{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:220px;
+    }
+
+    .main-content{
+        margin-left:220px;
+        padding:20px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .topics{
+        grid-template-columns:1fr;
+    }
+
+    .header h1{
+        font-size:30px;
+    }
+
+    .action-buttons{
+        flex-direction:column;
+    }
+
+    .action-buttons a{
+        text-align:center;
+    }
+}

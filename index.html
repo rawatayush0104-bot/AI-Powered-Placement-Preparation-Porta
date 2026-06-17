@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Placement Preparation Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <span>Placement Portal</span>
+    </div>
+
+    <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aptitude.html">Tests</a></li>
+    <li><a href="dsa.html">DSA Practice</a></li>
+    <li><a href="resume.html">Resume Analyzer</a></li>
+    <li><a href="interview.html">AI Interview</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    </ul>
+
+    <div id="authArea">
+
+    <div class="buttons" id="guestButtons">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="signup-btn">Sign Up</a>
+    </div>
+
+    <div class="user-menu" id="userMenu">
+
+        <div class="user-profile" onclick="toggleMenu()">
+
+            <div class="avatar" id="avatar">A</div>
+
+            <span id="navbarUsername">User</span>
+
+            ▼
+
+        </div>
+
+        <div class="dropdown" id="dropdown">
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a href="#">Profile</a>
+
+            <a href="#" onclick="logout()">Logout</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <span class="badge">
+            ✨ AI-Powered Learning
+        </span>
+
+        <h1>
+            AI-Powered<br>
+            Placement Preparation<br>
+            <span>Portal</span>
+        </h1>
+
+        <p>
+            Practice aptitude, DSA, analyze resumes and prepare
+            for interviews with AI-powered tools designed
+            to get you placed.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="register.html" class="start-btn">
+                    Get Started Free
+            </a>
+
+            <a href="#features" class="feature-btn">
+                    Explore Features
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="dashboard-card">
+
+            <h3>Welcome Back, Student 👋</h3>
+
+            <div class="stats">
+
+                <div class="box">
+                    <h2>24</h2>
+                    <p>Tests Taken</p>
+                </div>
+
+                <div class="box">
+                    <h2>76%</h2>
+                    <p>Avg Score</p>
+                </div>
+
+                <div class="box">
+                    <h2>150+</h2>
+                    <p>DSA Problems</p>
+                </div>
+
+            </div>
+
+            <div class="progress">
+
+                <h3>Your Progress</h3>
+
+                <div class="progress-bar">
+                    <div class="fill"></div>
+                </div>
+
+                <p>76% Complete</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="features" class="features">
+
+    <h2>Everything You Need To Succeed</h2>
+
+    <div class="feature-container">
+
+    <a href="aptitude.html" class="feature-link">
+        <div class="feature-card">
+            <div class="icon blue">
+                <i class="fas fa-clipboard-list"></i>
+            </div>
+
+            <h3>Aptitude Tests</h3>
+
+            <p>
+                Practice quantitative,
+                reasoning and verbal
+                questions.
+            </p>
+        </div>
+    </a>
+
+    <a href="dsa.html" class="feature-link">
+        <div class="feature-card">
+            <div class="icon green">
+                <i class="fas fa-code"></i>
+            </div>
+
+            <h3>DSA Practice</h3>
+
+            <p>
+                Improve coding and
+                problem-solving skills.
+            </p>
+        </div>
+    </a>
+
+    <a href="resume.html" class="feature-link">
+        <div class="feature-card">
+            <div class="icon purple">
+                <i class="fas fa-file-alt"></i>
+            </div>
+
+            <h3>Resume Analyzer</h3>
+
+            <p>
+                Get ATS score and
+                resume suggestions.
+            </p>
+        </div>
+    </a>
+
+    <a href="interview.html" class="feature-link">
+        <div class="feature-card">
+            <div class="icon orange">
+                <i class="fas fa-microphone"></i>
+            </div>
+
+            <h3>AI Interview</h3>
+
+            <p>
+                Generate interview
+                questions based on skills.
+            </p>
+        </div>
+    </a>
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="numbers">
+
+    <div class="number-card">
+        <h2>500+</h2>
+        <p>Aptitude Questions</p>
+    </div>
+
+    <div class="number-card">
+        <h2>200+</h2>
+        <p>DSA Problems</p>
+    </div>
+
+    <div class="number-card">
+        <h2>50+</h2>
+        <p>Interview Questions</p>
+    </div>
+
+    <div class="number-card">
+        <h2>ATS</h2>
+        <p>Resume Analysis</p>
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>Ready To Get Placed?</h2>
+
+    <p>
+        Join thousands of students preparing for placements with AI-powered tools.
+    </p>
+
+    <a href="register.html" class="start-btn">
+        Start Your Journey
+    </a>
+
+</section>
+<!-- Footer -->
+
+<footer>
+
+    <h2>Placement Portal</h2>
+
+    <p>
+        Practice • Learn • Get Placed
+    </p>
+
+    <div class="socials">
+
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-instagram"></i>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Placement Portal. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="auth.js"></script>
+
+<script>
+
+const username = localStorage.getItem("username");
+const loggedIn = localStorage.getItem("isLoggedIn");
+
+// Hide user menu by default
+document.getElementById("userMenu").style.display = "none";
+
+if(loggedIn === "true" && username){
+
+    document.getElementById("guestButtons").style.display = "none";
+
+    document.getElementById("userMenu").style.display = "block";
+
+    document.getElementById("navbarUsername").textContent = username;
+
+    document.getElementById("avatar").textContent =
+        username.charAt(0).toUpperCase();
+}
+
+function toggleMenu(){
+
+    const menu = document.getElementById("dropdown");
+
+    if(menu.style.display === "block"){
+        menu.style.display = "none";
+    }else{
+        menu.style.display = "block";
+    }
+}
+
+</script>
+
+</body>
+</html>

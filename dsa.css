@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* Stats */
+
+.stats{
+    width:90%;
+    margin:-40px auto 40px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.stat-card h2{
+    color:#2563eb;
+    font-size:32px;
+}
+
+.stat-card p{
+    margin-top:10px;
+    color:#666;
+}
+
+/* Progress */
+
+.progress-section{
+    width:90%;
+    margin:auto;
+}
+
+.progress-section h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+.progress-bar{
+    height:20px;
+    background:#ddd;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.progress{
+    width:60%;
+    height:100%;
+    background:#2563eb;
+}
+
+/* Topics */
+
+.container{
+    width:90%;
+    margin:50px auto;
+}
+
+.topic-heading{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:30px;
+}
+
+.topics{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.card h2{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.card button{
+    padding:12px 25px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#1e40af;
+}
+
+/* Challenge */
+
+.challenge{
+    width:90%;
+    margin:60px auto;
+}
+
+.challenge h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.challenge-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.challenge-card h3{
+    margin-bottom:10px;
+}
+
+.challenge-card p{
+    margin-bottom:20px;
+}
+
+.challenge-card button{
+    padding:12px 25px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1e40af;
+    transform:translateY(-2px);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .stats{
+        margin-top:20px;
+    }
+}

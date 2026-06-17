@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume Analyzer</title>
+
+<link rel="stylesheet" href="resume.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-file-lines"></i>
+        Resume Analyzer
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    <li><a href="aptitude.html">Tests</a></li>
+    <li><a href="dsa.html">DSA Practice</a></li>
+    <li><a href="resume.html">Resume Analyzer</a></li>
+    <li><a href="interview.html">AI Interview</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left-panel">
+
+        <div class="card">
+
+            <h2>Upload Resume</h2>
+
+            <div class="upload-box">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h3>Upload your Resume</h3>
+
+                <p>PDF, DOCX or TXT</p>
+
+                <input
+                type="file"
+                id="resumeFile"
+                accept=".pdf,.doc,.docx,.txt"
+                hidden>
+
+                <button onclick="document.getElementById('resumeFile').click()">
+                    Choose File
+                </button>
+
+                <p id="fileName">No file selected</p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Resume Overview</h2>
+
+            <div class="info-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Ayush Rawat</span>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>rawat.ayush0104@gmail.com</span>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>8791579914</span>
+            </div>
+
+            <div class="info-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>B.Tech CSE</span>
+            </div>
+
+            <button class="download-btn">
+                Download Analysis Report
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right-panel">
+
+        <div class="card analysis-overview">
+
+            <div class="circle">
+                <h1>78</h1>
+                <span>/100</span>
+            </div>
+
+            <div class="result-text">
+                <h2>Good Job 🎉</h2>
+
+                <p>
+                    Your resume is well-structured and
+                    ATS friendly.
+                </p>
+
+                <p>
+                    Check the suggestions below
+                    to improve further.
+                </p>
+            </div>
+
+            <div class="score-breakdown">
+
+                <div class="bar-item">
+                    <span>Content</span>
+
+                    <div class="bar">
+                        <div class="fill green"></div>
+                    </div>
+
+                    <strong>82/100</strong>
+                </div>
+
+                <div class="bar-item">
+                    <span>Format</span>
+
+                    <div class="bar">
+                        <div class="fill blue"></div>
+                    </div>
+
+                    <strong>75/100</strong>
+                </div>
+
+                <div class="bar-item">
+                    <span>Skills</span>
+
+                    <div class="bar">
+                        <div class="fill purple"></div>
+                    </div>
+
+                    <strong>80/100</strong>
+                </div>
+
+                <div class="bar-item">
+                    <span>ATS</span>
+
+                    <div class="bar">
+                        <div class="fill orange"></div>
+                    </div>
+
+                    <strong>74/100</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Detailed Feedback</h2>
+
+            <div class="feedback-card">
+                <i class="fa-solid fa-file-lines"></i>
+
+                <div>
+                    <h3>Content Analysis</h3>
+                    <p>Add measurable achievements.</p>
+                </div>
+            </div>
+
+            <div class="feedback-card">
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+                    <h3>Skills Analysis</h3>
+                    <p>Add more industry relevant skills.</p>
+                </div>
+            </div>
+
+            <div class="feedback-card">
+                <i class="fa-solid fa-shield"></i>
+
+                <div>
+                    <h3>ATS Compatibility</h3>
+                    <p>Your resume is ATS friendly.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const fileInput = document.getElementById("resumeFile");
+const fileName = document.getElementById("fileName");
+
+fileInput.addEventListener("change", function(){
+
+    if(this.files.length > 0){
+        fileName.innerHTML =
+        "✅ " + this.files[0].name;
+    }
+
+});
+
+</script>
+
+</body>
+<script src="resume.js"></script>
+</html>

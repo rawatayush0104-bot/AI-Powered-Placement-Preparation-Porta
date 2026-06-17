@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <h2>Placement Portal</h2>
+    </div>
+
+    <ul>
+        <li><a class="active" href="dashboard.html"><i class="fa-solid fa-user"></i> Dashboard</a></li>
+
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+
+        <li><a href="aptitude.html"><i class="fas fa-file-alt"></i> Aptitude Tests</a></li>
+
+        <li><a href="dsa.html"><i class="fas fa-code"></i> DSA Practice</a></li>
+
+        <li><a href="resume.html"><i class="fas fa-file"></i> Resume Analyzer</a></li>
+
+        <li><a href="interview.html"><i class="fas fa-microphone"></i> AI Interview</a></li>
+
+        <li><a href="#" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <div class="header">
+        <h1>Welcome Back, Ayush 👋</h1>
+        <p>Track your placement preparation progress.</p>
+    </div>
+
+    <!-- Stats Cards -->
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="card-head">
+                <h3>Aptitude Score</h3>
+                <i class="fas fa-chart-bar"></i>
+            </div>
+
+            <h2>85%</h2>
+
+            <div class="mini-progress">
+                <div style="width:85%"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <h3>DSA Progress</h3>
+                <i class="fas fa-code"></i>
+            </div>
+
+            <h2>60%</h2>
+
+            <div class="mini-progress">
+                <div style="width:60%"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <h3>ATS Score</h3>
+                <i class="fas fa-file"></i>
+            </div>
+
+            <h2>78%</h2>
+
+            <div class="mini-progress">
+                <div style="width:78%"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <h3>Interview Readiness</h3>
+                <i class="fas fa-microphone"></i>
+            </div>
+
+            <h2>70%</h2>
+
+            <div class="mini-progress">
+                <div style="width:70%"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Overall Progress -->
+
+    <div class="section">
+
+        <h2>Overall Progress</h2>
+
+        <div class="progress-item">
+            <span>Aptitude</span>
+            <span>85%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div style="width:85%"></div>
+        </div>
+
+        <div class="progress-item">
+            <span>DSA Practice</span>
+            <span>60%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div style="width:60%"></div>
+        </div>
+
+        <div class="progress-item">
+            <span>Resume Analyzer</span>
+            <span>78%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div style="width:78%"></div>
+        </div>
+
+    </div>
+
+    <!-- Quick Actions -->
+
+    <div class="section">
+
+        <h2>Quick Actions</h2>
+
+        <div class="action-buttons">
+
+            <a href="aptitude.html">Start Aptitude Test</a>
+
+            <a href="dsa.html">Practice DSA</a>
+
+            <a href="resume.html">Analyze Resume</a>
+
+            <a href="interview.html">Mock Interview</a>
+
+        </div>
+
+    </div>
+
+    <!-- Recent Activity -->
+
+    <div class="section">
+
+        <h2>Recent Activity</h2>
+
+        <div class="activity">✅ Completed Aptitude Test</div>
+
+        <div class="activity">💻 Solved Array Problem</div>
+
+        <div class="activity">📄 Resume Uploaded</div>
+
+        <div class="activity">🎤 Completed Mock Interview</div>
+
+    </div>
+
+    <!-- Topics -->
+
+    <div class="section">
+
+        <h2>Recommended Topics</h2>
+
+        <div class="topics">
+
+            <div class="topic-card">Arrays</div>
+            <div class="topic-card">Linked Lists</div>
+            <div class="topic-card">Trees</div>
+            <div class="topic-card">Graphs</div>
+            <div class="topic-card">SQL</div>
+            <div class="topic-card">Dynamic Programming</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+
+<script>
+checkLogin();
+</script>
+
+</body>
+</html>
